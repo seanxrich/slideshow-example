@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Modal Image Gallery">
+      <title>Modal Image Gallery</title>
+      <link rel="stylesheet" href="styles/reset.css">
+      <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <header>
+        <h1>Modal Image Gallery</h1>
+    </header>
+
+    <div class="row">
+      <div class="column">
+        <img src="images/img1.jpg" width="120px" height="90px" alt="Near Pebble Beach, CA." onclick="openModal();currentSlide(1)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="images/img2.jpg" width="120px" height="90px" alt="Near Pebble Beach, CA." onclick="openModal();currentSlide(2)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="images/img3.jpg" width="120px" height="90px" alt="Near Pebble Beach, CA." onclick="openModal();currentSlide(3)" class="hover-shadow">
+      </div>
+      <div class="column">
+        <img src="images/img4.jpg" width="120px" height="90px" alt="Near Pebble Beach, CA." onclick="openModal();currentSlide(4)" class="hover-shadow">
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+
+      <div class="modal-content">
+
+        <div class="slides">
+          <div class="imgtext">1 / 4</div>
+            <img src="images/img1.jpg" style="width:50%">
+        </div>
+
+        <div class="slides">
+          <div class="imgtext">2 / 4</div>
+            <img src="images/img2.jpg" style="width:50%">
+        </div>
+
+        <div class="slides">
+          <div class="imgtext">3 / 4</div>
+            <img src="images/img3.jpg" style="width:50%">
+        </div>
+
+        <div class="slides">
+          <div class="imgtext">4 / 4</div>
+            <img src="images/img4.jpg" style="width:50%">
+        </div>
+
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="column">
+          <img class="images" src="images/img1.jpg" onclick="currentSlide(1)">
+        </div>
+
+        <div class="column">
+          <img class="images" src="images/img2.jpg" onclick="currentSlide(2)">
+        </div>
+
+        <div class="column">
+          <img class="images" src="images/img3.jpg" onclick="currentSlide(3)">
+        </div>
+
+        <div class="column">
+          <img class="images" src="images/img4.jpg" onclick="currentSlide(4)">
+        </div>
+
+      </div> <!-- end "modal-content" div -->
+
+    </div> <!-- end "modal" div -->
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

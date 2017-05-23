@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(90, 90, 90);
+	font: bold 10px/1.5 Helvetica, Arial, sans-serif;
+	letter-spacing: .25rem;
+  margin: 5% auto;
+	text-align: center;
+	text-transform: capitalize;
+  width: 55%;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 5%;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* modal overlay */
+.modal {
+  background-color: rgb(0,0,0);
+  display: none;
+  padding-top: 5%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 1;
+}
+
+/* modal content */
+.modal-content {
+  margin: auto;
+  padding: 0;
+  position: relative;
+  width: 85%;
+}
+
+/* close button */
+.close {
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0;
+  right: 1%;
+}
+
+.close:hover, .close:focus {
+  color: #999;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.slides {
+  display: none;
+}
+
+/* prev and next buttons */
+.prev, .next {
+  bottom: 0;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 2%;
+  position: absolute;
+  transition: 0.6s ease;
+  width: auto;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+  border-radius: 0 10% 10% 0;
+  left: 0;
+}
+
+.next {
+  border-radius: 10% 0 0 10%;
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgb(0,0,0);
+}
+
+/* image number text (e.g. 1 / 4) */
+.imgtext {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 1%;
+}
+
+img.images {
+  opacity: 0.6;
+}
+
+.active, .images:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 0 1rem;
+}
